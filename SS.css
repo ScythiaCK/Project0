@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 .grid {
 
     display: grid;
@@ -52,15 +52,20 @@ td{
   border: 1px solid black;
   padding:3px;
 }
+.caveat{
+  font-family: 'Caveat', cursive;
+}
 
-.red{color:red;}
-.orange{color:darkorange;}
-.yellow{color:#EEDD11;}
-.green{color:limegreen;}
-.blue{color:deepskyblue;}
-.theblueviolet{color:darkblue;}
-.reallydarkblue{color:midnightblue;}
-
+.red{color:red;font-family: 'Caveat', cursive;}
+.orange{color:darkorange;font-family: 'Caveat', cursive;}
+.yellow{color:#EEDD11;font-family: 'Caveat', cursive;}
+.green{color:limegreen;font-family: 'Caveat', cursive;}
+.blue{color:deepskyblue;font-family: 'Caveat', cursive;}
+.theblueviolet{color:#0066F5;font-family: 'Caveat', cursive;}
+.reallydarkblue{color:midnightblue;font-family: 'Caveat', cursive;}
+.indigo{color:indigo; font-family: 'Caveat', cursive;}
+.purple{color:purple;font-family: 'Caveat', cursive;}
+.fakeviolet{color:#581C8C;font-family: 'Caveat', cursive;}
 
 
 .contain {
