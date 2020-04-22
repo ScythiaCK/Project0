@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 .grid {
-    background-color: green;
+
     display: grid;
     padding: 1px;
     grid-column-gap: 1px;
@@ -25,13 +27,7 @@
   text-align:left;
 }
 
-.header {
-  position: fixed;
-  height: 75px;
-  background: #EEEEEE;
-  border: 1px solid aquamarine;
-  width:100%;
-}
+
 
 table{
   border: 5px solid blue;
@@ -64,13 +60,29 @@ td{
 .deepblue{color:darkblue;}
 .midnightblue{color:midnightblue;}
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
-body {
-	margin: 0;
-	background: #222;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 800;
+
+
+.contain {
+	width: 80%;
+	margin: 0 auto;
 }
+
+header{
+  background-color: #55d6aa;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear:both;
+
+}
+
+#floatleft{
+  float: left;
+  padding: 10px 0;
+}
+
 
 .container {
 	width: 80%;
@@ -79,6 +91,9 @@ body {
 
 header {
   background: #55d6aa;
+  position: sticky;
+  z-index: 5;
+  top:0px;
 }
 
 header::after {
@@ -86,6 +101,7 @@ header::after {
   display: table;
   clear: both;
 }
+
 
 nav {
   float: right;
@@ -101,10 +117,13 @@ nav li {
   display: inline-block;
   margin-left: 70px;
   padding-top: 23px;
-
+  height: 75px;
   position: relative;
 }
 
+nav li:hover{
+  background-color: yellow;
+}
 nav a {
   color: #444;
   text-decoration: none;
@@ -114,6 +133,7 @@ nav a {
 
 nav a:hover {
   color: #000;
+  text-decoration: none;
 }
 
 nav a::before {
@@ -131,4 +151,8 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%;
+}
+
+.curly{
+  font-family: 'Dancing Script', cursive;
 }
