@@ -160,6 +160,11 @@ nav a:hover::before {
   color: navy;
 }
 
+.wiry{
+  font-family: 'Dancing Script', cursive;
+  color: coral;
+}
+
 h3{
   padding:8px;
 }
@@ -202,6 +207,12 @@ h3{
     text-align: center;
     padding-left:50px;
     float: left;
+  }
+}
+
+@media(min-width:700px){
+  .wiry::after{
+    content: "Welcome to my website!"
   }
 }
 
