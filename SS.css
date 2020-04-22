@@ -130,6 +130,7 @@ nav li {
 
 nav li:hover{
   background-color: yellow;
+  transition: background-color 1s;
 }
 nav a {
   color: #444;
