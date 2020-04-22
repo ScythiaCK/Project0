@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="SS.css">
+        <link rel="shortcut icon" href="Web.png">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <script>
+        function clickCounter() {
+          if (typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+              localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+              localStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "This button has been clicked " + localStorage.clickcount + " time(s).";
+          } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+          }
+        }
+
+
+      </script>
+      <header>
+        <div class="contain">
+          <div id="floatleft" class="curly">
+            <h3>My Website!</h3>
+
+          </div>
+          <nav>
+            <h4 class="curly" id="small_screen_nav_alt"></h4>
+            <ul>
+              <li><a href="index.html">Home Webpage</a></li>
+              <li><a href="#">Favourites</a></li>
+              <li><a href="#">Crazy Things</a></li>
+              <li><a href="#">Nothing</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </header>
+
+
+    <div class="content">
+
+      <div class="grid">
+          <div class="sidebar" class="grid-item">
+            <p>You see, this won't get stretched something something</p>
+            <p>Hello, this is my website! </p>
+          </div>
+
+          <div>
+            <h5 class="caveat">
+              It's a
+              <span class="red">r</span><!-- these comments are used to prevent the spacing between <span>s.
+              --><span class="orange">a</span><!--
+              --><span class="yellow">i</span><!--
+              --><span class="green">n</span><!--
+              --><span class="blue">b</span><!--
+              --><span class="theblueviolet">o</span><!--
+              --><span class="reallydarkblue">w</span>!
+            </h5>
+            <p id="description-rainbow">
+              As you might know, a rainbow doesn't really contain the colour <span class="indigo">indigo</span>. And, the colour <span class="theblueviolet">violet</span> isn't the<span class="purple">purple</span> kind of <span class="fakeviolet">violet</span>. Check out more <span><a id="checkout" href="https://www.sciencealert.com/watch-this-is-not-a-rainbow" title: "Check out MinutePhysics' video!">here</a><span>!
+            </p>
+            <div id="clicky2">
+              <p><button onclick="clickCounter()" type="button" id="result">Click me!</button></p>
+              <p>Click the button to see the counter increase.</p>
+              <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+
+            </div>
+          </div>
+
+
+
+      </div>
+    </div>
+
+
+
+    <div id="end">
+      <p class="curly">
+        My other websites:
+        <div align="center">
+          <ul class="unordered">
+            <li><a href="index.html">Home Webpage</a></li>
+            <li><a href="#">Favourites</a></li>
+            <li><a href="#">Crazy Things</a></li>
+            <li><a href="#">Nothing</a></li>
+          </ul>
+        </div>
+      </p>
+    </div>
+    </body>
+</html>

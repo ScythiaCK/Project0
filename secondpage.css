@@ -1,0 +1,61 @@
+nav{
+  float: right;
+
+}
+h3,h4{
+  float:left;
+  padding:10px;
+  font-family: 'Dancing Script', cursive;
+  font-size:36px;
+  color:#FF6055;
+}
+
+@media (max-width:980px){
+  h3{
+    display:none;
+  }
+}
+
+@media (max-width:800px){
+  nav{
+    display:none;
+  }
+  h4::before{
+    content:"This is my website."
+  }
+}
+nav a{
+  color:#777777;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family: 'Comfortaa', cursive;
+}
+
+
+nav li:hover{
+  color:#222222;
+  background-color: khaki;
+}
+
+nav a:hover{
+  text-decoration:none;
+}
+
+nav li{
+  height:75px;
+}
+
+.curly{
+  font-family: 'Dancing Script', cursive;
+  font-size:20px;
+  text-align:center;
+}
+
+#header{
+  background-color:#55d6aa;
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}

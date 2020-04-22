@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 .grid {
-    background-color: green;
+
     display: grid;
     padding: 1px;
     grid-column-gap: 1px;
     grid-row-gap: 1px;
     grid-template-columns: 250px auto;
     grid-template-rows: 1000px;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .grid-item {
@@ -14,7 +16,7 @@
     font-size: 20px;
     text-align: center;
 }
-#sidebar {
+.sidebar {
   background-color: gray;
   color:black;
   padding-top: 20px;
@@ -23,15 +25,10 @@
   font-style:normal;
   font-family: sans-serif;
   text-align:left;
+  margin: 0;
 }
 
-.header {
-  position: fixed;
-  height: 75px;
-  background: #EEEEEE;
-  border: 1px solid aquamarine;
-  width:100%;
-}
+
 
 table{
   border: 5px solid blue;
@@ -55,17 +52,177 @@ td{
   border: 1px solid black;
   padding:3px;
 }
+.caveat{
+  font-family: 'Caveat', cursive;
+}
 
-.red{color:red;}
-.darkorange{color:darkorange;}
-.yellow{color:#EEDD11;}
-.limegreen{color:limegreen;}
-.deepskyblue{color:deepskyblue;}
-.deepblue{color:darkblue;}
-.midnightblue{color:midnightblue;}
+.red{color:red;font-family: 'Caveat', cursive;}
+.orange{color:darkorange;font-family: 'Caveat', cursive;}
+.yellow{color:#EEDD11;font-family: 'Caveat', cursive;}
+.green{color:limegreen;font-family: 'Caveat', cursive;}
+.blue{color:deepskyblue;font-family: 'Caveat', cursive;}
+.theblueviolet{color:#0066F5;font-family: 'Caveat', cursive;}
+.reallydarkblue{color:midnightblue;font-family: 'Caveat', cursive;}
+.indigo{color:indigo; font-family: 'Caveat', cursive;}
+.purple{color:purple;font-family: 'Caveat', cursive;}
+.fakeviolet{color:#581C8C;font-family: 'Caveat', cursive;}
 
-#WebSym{
-  background-color: lightgray;
-  width:40px;
-  height: 40px;
+
+.contain {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header{
+  background-color: #55d6aa;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear:both;
+
+}
+
+#floatleft{
+  float: left;
+  padding: 10px 0;
+}
+
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+  position: sticky;
+  z-index: 5;
+  top:0px;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+nav {
+  float: right;
+  height: 75px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  height: 75px;
+  position: relative;
+}
+
+nav li:hover{
+  background-color: yellow;
+  transition: background-color 1s;
+}
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.curly{
+  font-family: 'Dancing Script', cursive;
+  color: navy;
+  text-align: center;
+}
+
+.wiry{
+  font-family: 'Dancing Script', cursive;
+  color: coral;
+}
+
+h3{
+  padding:8px;
+}
+
+#hidingPic{
+  width: 70%;
+  height: auto;
+}
+
+#end{
+  background-color: #55d6aa;
+}
+
+#end a{
+  text-decoration: none;
+}
+#end a:hover{
+  text-decoration: none;
+}
+
+#end li{
+  list-style: none;
+}
+
+@media(max-width:1030px){
+  #floatleft{
+    display:none;
+  }
+}
+
+@media(max-width:860px){
+  nav ul{
+    display:none;
+  }
+  nav h4::after{
+    content: "Welcome to my website!";
+  }
+  nav h4{
+    font-size:36px;
+    text-align: center;
+    padding-left:50px;
+    float: left;
+  }
+}
+
+@media(min-width:700px){
+  .wiry::after{
+    content: "Welcome to my website!"
+  }
+}
+
+#small_screen_nav_alt{
+  float:left;
 }
