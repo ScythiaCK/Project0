@@ -106,6 +106,7 @@ header::after {
 
 nav {
   float: right;
+  height: 75px;
 }
 
 nav ul {
@@ -181,4 +182,29 @@ h3{
 
 #end li{
   list-style: none;
+}
+
+@media(max-width:1030px){
+  #floatleft{
+    display:none;
+  }
+}
+
+@media(max-width:860px){
+  nav ul{
+    display:none;
+  }
+  nav h4::after{
+    content: "Welcome to my website!";
+  }
+  nav h4{
+    font-size:36px;
+    text-align: center;
+    padding-left:50px;
+    float: left;
+  }
+}
+
+#small_screen_nav_alt{
+  float:left;
 }
