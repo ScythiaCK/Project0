@@ -163,7 +163,17 @@ nav a:hover::before {
   height: auto;
 }
 
-#Easteregg{
-  height:75px;
-  background-color: limegreen;
+#end{
+  background-color: #55d6aa;
+}
+
+#end a{
+  text-decoration: none;
+}
+#end a:hover{
+  text-decoration: none;
+}
+
+#end li{
+  list-style: none;
 }
