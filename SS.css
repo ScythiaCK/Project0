@@ -164,6 +164,7 @@ nav a:hover::before {
 .curly{
   font-family: 'Dancing Script', cursive;
   color: navy;
+  text-align: center;
 }
 
 .wiry{
