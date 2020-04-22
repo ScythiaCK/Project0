@@ -9,6 +9,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script&display=swap" rel="stylesheet">
     </head>
     <body>
+      <script>
+        function clickCounter() {
+          if (typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+              localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+              localStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "This button has been clicked " + localStorage.clickcount + " time(s).";
+          } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+          }
+        }
+
+
+      </script>
       <header>
         <div class="contain">
           <div id="floatleft" class="curly">
@@ -29,7 +45,7 @@
 
 
     <div class="content">
-      
+
       <div class="grid">
           <div class="sidebar" class="grid-item">
             <p>You see, this won't get stretched something something</p>
@@ -51,7 +67,15 @@
             <p id="description-rainbow">
               As you might know, a rainbow doesn't really contain the colour indigo. And, the colour violet isn't the purple kind of violet. Check out more <span><a href="https://www.sciencealert.com/watch-this-is-not-a-rainbow">here</a><span>!
             </p>
+            <div id="clicky2">
+              <p><button onclick="clickCounter()" type="button" id="result">Click me!</button></p>
+              <p>Click the button to see the counter increase.</p>
+              <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+
+            </div>
           </div>
+
+
 
       </div>
     </div>
