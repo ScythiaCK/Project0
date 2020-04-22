@@ -8,7 +8,7 @@
     grid-row-gap: 1px;
     grid-template-columns: 250px auto;
     grid-template-rows: 1000px;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .grid-item {
@@ -16,7 +16,7 @@
     font-size: 20px;
     text-align: center;
 }
-#sidebar {
+.sidebar {
   background-color: gray;
   color:black;
   padding-top: 20px;
@@ -25,6 +25,7 @@
   font-style:normal;
   font-family: sans-serif;
   text-align:left;
+  margin: 0;
 }
 
 
@@ -155,4 +156,14 @@ nav a:hover::before {
 
 .curly{
   font-family: 'Dancing Script', cursive;
+}
+
+#hidingPic{
+  width: 70%;
+  height: auto;
+}
+
+#Easteregg{
+  height:75px;
+  background-color: limegreen;
 }
