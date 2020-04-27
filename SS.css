@@ -226,3 +226,16 @@ h3{
 #small_screen_nav_alt{
   float:left;
 }
+.flexie{
+  border: 5px solid blue;
+}
+
+#nothinghere{
+  background-color: yellow;
+  color: red;
+  text-align: center;
+}
+
+#nothinghere:hover{
+  color:blue;  
+}
