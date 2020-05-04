@@ -153,58 +153,72 @@
                   </span>
                 </div>
                 <span class="normal">&#125;</span><br>
-                <span class="htmltag">nav li</span><span class="normal">&#123;</span><br>
+                <span class="htmltag">nav a</span><span class="normal">&#123;</span><br>
                 <div class="tab">
                   <span>
                     <span class="normal">
-                      display: inline-block;<br>padding-top:
-                      <span class="attributes">23px</span>;<br>height:
-                      <span class="attributes">75px</span>;<br>position:relative;
+                      color:
+                      <span class="attributes">#</span><span class="colourcode">444</span><br>
+                      text-transform: uppercase;<br>font-size:
+                      <span class="attributes">14px</span>;
                   </span>
                 </div>
+                <span class="normal">&#125;</span><br>
+                <span class="htmltag">nav a</span><span class="attributes">:hover</span><span class="normal">&#123;</span><br>
+                <div class="tab">
+                  <span class="normal">
+                    color:
+                    <span class="attributes">#</span><span class="colourcode">000</span>;<br>
+                    text-decoration: none;
+                  </span>
+                </div>
+                <span class="normal">&#125;</span><br>
+                <span class="htmltag">nav a</span><span class="attributes">::before</span><span class="normal">&#123;</span><br>
+                <div class="tab">
+                  <span class="normal">
+                    content:
+                    <span class="quotes">''</span>;<br>height:
+                    <span class="attributes">5px</span>;<br>background-color:
+                    <span class="attributes">#</span><span class="colourcode">444</span>;<br>
+                    position: absolute;<br> top:
+                    <span class="attributes">0</span>;<br>width:
+                    <span class="attributes">0%</span>;<br>transition: all ease-in-out
+                    <span class="attributes">250ms</span>;
+                  </span>
+                </div>
+                <span class="normal">&#125;</span><br>
+                <span class="htmltag">nav a</span><span class="attributes">:hover::before<span>
+                <span class="normal">
+                  <div class="tab">
+                    width:
+                    <span class="attributes">100%</span>;
+                  </div>
+                }
+                </span><br>
+                <span class="normal">
+                  <span class="attributes">.curly</span>{
+                  <div class="tab">
+                    font-family:
+                    <span class="quotes">'Dancing Script'</span>,
+                    <span class="csstag">cursive</span>;<br>color:
+                    <span class="attributes">navy</span>;<br>text-align:
+                    center;<br>
+                  </div>
+                  }
+                </span>
+                <span class="normal">
+                  <span class="htmltag">h3</span>{
+                  <div class="tab">
+                    padding:
+                    <span class="attributes">8px</span>;
+                  </div>
+                  }
+                </span>
 
 
 
               <!--
 
-              nav a {
-                color: #444;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: 14px;
-              }
-
-              nav a:hover {
-                color: #000;
-                text-decoration: none;
-              }
-
-              nav a::before {
-                content: '';
-                display: block;
-                height: 5px;
-                background-color: #444;
-
-                position: absolute;
-                top: 0;
-                width: 0%;
-
-                transition: all ease-in-out 250ms;
-              }
-
-              nav a:hover::before {
-                width: 100%;
-              }
-
-              .curly{
-                font-family: 'Dancing Script', cursive;
-                color: navy;
-                text-align: center;
-              }
-
-              h3{
-                padding:8px;
-              }
 
               @media(max-width:860px){
                 nav ul{
