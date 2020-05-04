@@ -73,16 +73,6 @@ td{
 	margin: 0 auto;
 }
 
-header{
-  background-color: #55d6aa;
-}
-
-header::after{
-  content: '';
-  display: table;
-  clear:both;
-
-}
 
 #floatleft{
   float: left;
@@ -237,5 +227,33 @@ h3{
 }
 
 #nothinghere:hover{
-  color:blue;  
+  color:blue;
+}
+
+.normal{
+  color: #ABB2BF;
+}
+
+.htmltag{
+  color: #E06C75;
+}
+
+.attributes{
+  color: #D19A66;
+}
+
+.quotes{
+  color: #98C378;
+}
+
+.tab{
+  padding-left: 5%;
+}
+
+.monospace{
+  font-family: monospace;
+}
+
+.comfort{
+  font-family: 'Comfortaa', sans-serif;
 }

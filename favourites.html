@@ -32,6 +32,166 @@
               <p>You see, this won't get stretched something something</p>
               <p>Hello, this is my website! </p>
             </div>
+            <div>
+              <h3 class="comfort">This is how I make my header:</h3>
+              <h5 class="comfort">HTML:</h5>
+              <div class="monospace">
+                <span class="normal">&lt;</span><span class="htmltag">header</span><span class="normal">&gt;</span><!-- This says <header>. -->
+                <div class="tab">
+                  <span class="normal">&lt;</span><span class="htmltag">div</span>
+                  <span class="attributes">class</span><span class="normal">&#61;</span><span class="quotes">&#34;contain&#34;</span><span class="normal">&gt;</span>
+                  <div class="tab">
+                    <span class="normal">&lt;</span><span class="htmltag">div</span>
+                    <span class="attributes">id</span><span class="normal">&#61;</span><span class="quotes">&#34;floatleft&#34;</span>
+                    <span class="attributes">class</span><span class="normal">&#61;</span><span class="quotes">&#34;curly&#34;</span><span class="normal">&gt;</span>
+                    <div class="tab">
+                        <span class="normal">&lt;</span><span class="htmltag">h&#51;</span><span class="normal">&gt;</span><span class="normal">My</span>
+                        <span class="normal">Website&#33;</span><span class="normal">&lt&sol;</span><span class="htmltag">h&#51;</span><span class="normal">&gt;</span>
+                    </div>
+                    <span class="normal">&lt&sol;</span><span class="htmltag">div</span><span class="normal">&gt;</span><br>
+                    <span class="normal">&lt;</span><span class="htmltag">nav</span><span class="normal">&gt;</span>
+                      <div class="tab">
+                        <span class="normal">&lt;</span><span class="htmltag">h&#52</span>
+                        <span class="attributes">class</span><span class="normal">&#61;</span><span class="quotes">&#34;curly&#34;</span>
+                        <span class="attributes">id</span><span class="normal">&#61;</span><span class="quotes">&#34;small&#95;screen&#95;nav&#95;alt&#34;</span><span class="normal">&lt;&sol;</span><span class="htmltag">h&#52;</span><span class="normal">&gt;</span>
+                        <br>
+                        <span class="normal">&lt;</span><span class="htmltag">ul</span><span class="normal">&gt;</span>
+                        <div class="tab">
+                          <span class="normal">&lt;</span><span class="htmltag">li</span><span class="normal">&gt;</span><!--
+                          --><span class="normal">&lt;</span><span class="htmltag">a</span>
+                          <span class="attributes">href</span><span class="normal">&#61;</span><span class="quotes">&#34;index&#46;html&#34;</span><span class="normal">&gt;</span><!--
+                          --><span class="normal">Main Page</span>
+                          <span class="normal">&lt;&sol;</span><span class="htmltag">li</span><span class="normal">&gt;</span>
+                          <br>
+                          <span class="normal">&lt;</span><span class="htmltag">li</span><span class="normal">&gt;</span><!--
+                          --><span class="normal">&lt;</span><span class="htmltag">a</span>
+                          <span class="attributes">href</span><span class="normal">&#61;</span><span class="quotes">&#34;secondpage&#46;html&#34;</span><span class="normal">&gt;</span><!--
+                          --><span class="normal">Second Webpage</span>
+                          <span class="normal">&lt;&sol;</span><span class="htmltag">li</span><span class="normal">&gt;</span>
+                          <br>
+                          <span class="normal">&lt;</span><span class="htmltag">li</span><span class="normal">&gt;</span><!--
+                          --><span class="normal">&lt;</span><span class="htmltag">a</span>
+                          <span class="attributes">href</span><span class="normal">&#61;</span><span class="quotes">&#34;third&#46;html&#34;</span><span class="normal">&gt;</span><!--
+                          --><span class="normal">Nothing</span>
+                          <span class="normal">&lt;&sol;</span><span class="htmltag">li</span><span class="normal">&gt;</span>
+                        <!--
+
+                          <nav>
+                            <h4 class="curly" id="small_screen_nav_alt"></h4>
+                            <ul>
+                              <li><a href="index.html">Main Page</a></li>
+                              <li><a href="secondpage.html">Second Webpage</a></li>
+                              <li><a href="third.html">Nothing</a></li>
+                            </ul>
+                          </nav>
+
+                        -->
+                        </div>
+                        <span class="normal">&lt;&sol;</span><span class="htmltag">ul</span><span class="normal">&gt;</span>
+                      </div>
+                    <span class="normal">&lt;&sol;</span><span class="htmltag">nav</span><span class="normal">&gt;</span>
+                  </div>
+                  <span class="normal">&lt;&sol;</span><span class="htmltag">div</span><span class="normal">&gt;</span>
+              </div>
+              <span class="normal">&lt;&sol;</span><span class="htmltag">header</span><span class="normal">&gt;</span><!-- </header> -->
+              <h5 class="comfort">CSS:</h5>
+              <!--
+              @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+              @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+              header::after{
+                content: '';
+                display: table;
+                clear:both;
+
+              }
+
+              #floatleft{
+                float: left;
+                padding: 10px 0;
+              }
+
+              nav {
+                float: right;
+                height: 75px;
+              }
+
+              nav ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+              }
+
+              nav li {
+                display: inline-block;
+                margin-left: 70px;
+                padding-top: 23px;
+                height: 75px;
+                position: relative;
+              }
+
+              nav li:hover{
+                background-color: yellow;
+                transition: background-color 1s;
+              }
+              nav a {
+                color: #444;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 14px;
+              }
+
+              nav a:hover {
+                color: #000;
+                text-decoration: none;
+              }
+
+              nav a::before {
+                content: '';
+                display: block;
+                height: 5px;
+                background-color: #444;
+
+                position: absolute;
+                top: 0;
+                width: 0%;
+
+                transition: all ease-in-out 250ms;
+              }
+
+              nav a:hover::before {
+                width: 100%;
+              }
+
+              .curly{
+                font-family: 'Dancing Script', cursive;
+                color: navy;
+                text-align: center;
+              }
+
+              h3{
+                padding:8px;
+              }
+
+              @media(max-width:860px){
+                nav ul{
+                  display:none;
+                }
+                nav h4::after{
+                  content: "Welcome to my website!";
+                }
+                nav h4{
+                  font-size:36px;
+                  text-align: center;
+                  padding-left:50px;
+                  float: left;
+                }
+              }
+
+            -->
+            </div>
+
+
 
         </div>
       </div>
