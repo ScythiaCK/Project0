@@ -13,8 +13,9 @@
 
 .grid-item {
     background-color: white;
-    font-size: 20px;
-    text-align: center;
+    font-size: 15px;
+    overflow: scroll;
+    height:900px;
 }
 .sidebar {
   background-color: gray;
@@ -27,6 +28,7 @@
   text-align:left;
   margin: 0;
 }
+
 
 
 
@@ -256,4 +258,20 @@ h3{
 
 .comfort{
   font-family: 'Comfortaa', sans-serif;
+}
+
+.attags{
+  color: #C477DB;
+}
+
+.ids{
+  color: #61AFEF;
+}
+
+.colourcode{
+  color: #56B6C2;
+}
+
+.csstag{
+  color: #828996;
 }

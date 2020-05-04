@@ -28,12 +28,12 @@
       </header>
       <div class="content">
         <div class="grid">
-            <div class="sidebar" class="grid-item">
+            <div class="sidebar" class="grid-item" >
               <p>You see, this won't get stretched something something</p>
               <p>Hello, this is my website! </p>
             </div>
-            <div>
-              <h3 class="comfort">This is how I make my header:</h3>
+            <div class="grid-item">
+              <h3 class="comfort">This is how I make my header&#58;</h3>
               <h5 class="comfort">HTML:</h5>
               <div class="monospace">
                 <span class="normal">&lt;</span><span class="htmltag">header</span><span class="normal">&gt;</span><!-- This says <header>. -->
@@ -94,46 +94,79 @@
                   <span class="normal">&lt;&sol;</span><span class="htmltag">div</span><span class="normal">&gt;</span>
               </div>
               <span class="normal">&lt;&sol;</span><span class="htmltag">header</span><span class="normal">&gt;</span><!-- </header> -->
+              </div>
               <h5 class="comfort">CSS:</h5>
+              <div class="monospace">
+                <span class="attags">&#64;import</span>
+                <span class="colourcode">url</span><span class="normal">&#40;</span><span class="quotes">&#39;</span><!--
+                --><span class="colourcode">https&#57;&#47;&#47;fonts.googleapis.com&$47;css&#50;family&#61;Dancing+Script&amp;display&#61;swap</span><!--
+                --><span class="quotes">&#39;</span><span class="normal">&#41;&#59;</span>
+                <br>
+                <span class="attags">&#64;import</span>
+                <span class="colourcode">url</span><span class="normal">&#40;</span><span class="quotes">&#39;</span><!--
+                --><span class="colourcode">https&#57;&#47;&#47;fonts.googleapis.com&$47;css&#50;family&#61;Caveat&#58;wght&#64;&#55;&#48;&#48;&amp;display&#61;swap</span><!--
+                --><span class="quotes">&#39;</span><span class="normal">&#41;&#59;</span><br><br>
+                <span class="htmltag">header</span><span class="attributes">&#58;&#58;after</span><span class="normal">&#123;</span>
+                <br>
+                <div class="tab">
+                  <span class="normal">content&#58;</span>
+                  <span class="quotes">&#39;&#39;</span><span class="normal">&#59;</span><br>
+                  <span class="normal">display&#58; table&#59;<br>clear&#58;both&#59;</span>
+                </div>
+                <span class="normal">&#125;</span><br>
+                <span class="ids">&#35;floatleft</span><span class="normal">&#123;</span><br>
+                <div class="tab">
+                  <span class="normal">float&#58; left&#59;<br>padding&#58;<span class="attributes">10px 0</span>&#59;</span>
+                </div>
+                <span class="normal">&#125;</span><br>
+                <span class="htmltag">nav</span><span class="normal">&#123;</span><br>
+                <div class="tab">
+                  <span class="normal">float&#58; right&#59;<br>height&#58;<span class="attributes">75px</span>&#59;</span>
+                </div>
+                <span class="normal">&#125;</span><br>
+                <span class="htmltag">nav ul</span><span class="normal">&#123;</span><br>
+                <div class="tab">
+                  <span class="normal">margin&#58;
+                    <span class="attributes">0</span>&#59;<br>padding&#58;
+                    <span class="attributes">0</span>&#59;<br>list&#45;style&#58; none&#59
+                  </span>
+                </div>
+                <span class="normal">&#125;</span><br>
+                <span class="htmltag">nav li</span><span class="normal">&#123;</span><br>
+                <div class="tab">
+                  <span>
+                    <span class="normal">
+                      display: inline-block;<br>padding-top:
+                      <span class="attributes">23px</span>;<br>height:
+                      <span class="attributes">75px</span>;<br>position:relative;
+                  </span>
+                </div>
+                <span class="normal">&#125;</span><br>
+                <span class="htmltag">nav li<span class="attributes">:hover</span></span><span class="normal">&#123;</span><br>
+                <div class="tab">
+                  <span>
+                    <span class="normal">
+                      background-color:
+                      <span class="attributes">yellow</span>;<br>transition:
+                      <span class="csstag">background-color</span>
+                      <span class="attributes">1s</span>;<br>
+                  </span>
+                </div>
+                <span class="normal">&#125;</span><br>
+                <span class="htmltag">nav li</span><span class="normal">&#123;</span><br>
+                <div class="tab">
+                  <span>
+                    <span class="normal">
+                      display: inline-block;<br>padding-top:
+                      <span class="attributes">23px</span>;<br>height:
+                      <span class="attributes">75px</span>;<br>position:relative;
+                  </span>
+                </div>
+
+
+
               <!--
-              @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-              @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
-              header::after{
-                content: '';
-                display: table;
-                clear:both;
-
-              }
-
-              #floatleft{
-                float: left;
-                padding: 10px 0;
-              }
-
-              nav {
-                float: right;
-                height: 75px;
-              }
-
-              nav ul {
-                margin: 0;
-                padding: 0;
-                list-style: none;
-              }
-
-              nav li {
-                display: inline-block;
-                margin-left: 70px;
-                padding-top: 23px;
-                height: 75px;
-                position: relative;
-              }
-
-              nav li:hover{
-                background-color: yellow;
-                transition: background-color 1s;
-              }
               nav a {
                 color: #444;
                 text-decoration: none;
@@ -190,6 +223,7 @@
 
             -->
             </div>
+
 
 
 
