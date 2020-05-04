@@ -13,8 +13,9 @@
 
 .grid-item {
     background-color: white;
-    font-size: 20px;
-    text-align: center;
+    font-size: 15px;
+    overflow: scroll;
+    height:900px;
 }
 .sidebar {
   background-color: gray;
@@ -27,6 +28,7 @@
   text-align:left;
   margin: 0;
 }
+
 
 
 
@@ -73,16 +75,6 @@ td{
 	margin: 0 auto;
 }
 
-header{
-  background-color: #55d6aa;
-}
-
-header::after{
-  content: '';
-  display: table;
-  clear:both;
-
-}
 
 #floatleft{
   float: left;
@@ -225,4 +217,65 @@ h3{
 
 #small_screen_nav_alt{
   float:left;
+}
+.flexie{
+  border: 5px solid blue;
+}
+
+#nothinghere{
+  background-color: yellow;
+  color: red;
+  text-align: center;
+}
+
+#nothinghere:hover{
+  color:blue;
+}
+
+.normal{
+  color: #ABB2BF;
+}
+
+.htmltag{
+  color: #E06C75;
+}
+
+.attributes{
+  color: #D19A66;
+}
+
+.quotes{
+  color: #98C378;
+}
+
+.tab{
+  padding-left: 5%;
+}
+
+.monospace{
+  font-family: monospace;
+}
+
+.comfort{
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.attags{
+  color: #C477DB;
+}
+
+.ids{
+  color: #61AFEF;
+}
+
+.colourcode{
+  color: #56B6C2;
+}
+
+.csstag{
+  color: #828996;
+}
+
+div>ul>li>a{
+  color:#7218cc;
 }
