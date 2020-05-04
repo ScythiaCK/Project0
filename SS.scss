@@ -1,0 +1,270 @@
+$caveat: 'Caveat', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+.grid {
+
+    display: grid;
+    padding: 1px;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 1000px;
+    margin-top: 0px;
+}
+
+.grid-item {
+    background-color: white;
+    font-size: 15px;
+    overflow: scroll;
+    height:900px;
+}
+.sidebar {
+  background-color: gray;
+  color:black;
+  padding-top: 20px;
+  padding-left: 5px;
+  font-size: 14px;
+  font-style:normal;
+  font-family: sans-serif;
+  text-align:left;
+  margin: 0;
+  a{
+    color:#7218cc;
+  }
+}
+
+
+
+
+table{
+  border: 5px solid blue;
+  background-color: tomato;
+  color: dodgerblue;
+  border-collapse: collapse;
+  width: 20%;
+  text-align: center;
+}
+
+th{
+  border: 3px solid black;
+  background-color: limegreen;
+  color: mediumvioletred;
+  padding:3px;
+
+}
+td{
+  background-color:lightgray;
+  color:black;
+  border: 1px solid black;
+  padding:3px;
+}
+.caveat{
+  font-family: $caveat;
+}
+
+.red{color:red; @extend .caveat;}
+.orange{color:darkorange; @extend .caveat;}
+.yellow{color:#EEDD11; @extend .caveat;}
+.green{color:limegreen; @extend .caveat;}
+.blue{color:deepskyblue; @extend .caveat;}
+.theblueviolet{color:#0066F5; @extend .caveat;}
+.reallydarkblue{color:midnightblue; @extend .caveat;}
+.indigo{color:indigo; @extend .caveat;}
+.purple{color:purple; @extend .caveat;}
+.fakeviolet{color:#581C8C; @extend .caveat;}
+
+
+.contain {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+#floatleft{
+  float: left;
+  padding: 10px 0;
+}
+
+
+header {
+  background: #55d6aa;
+  position: sticky;
+  z-index: 5;
+  top:0px;
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+
+
+
+nav {
+  float: right;
+  height: 75px;
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    height: 75px;
+    position: relative;
+    &:hover{
+      background-color: yellow;
+      transition: background-color 1s;
+    }
+  }
+  a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    &:hover{
+      color: #000;
+      text-decoration: none;
+      &::before{
+        width: 100%;
+      }
+    }
+    &::before{
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: #444;
+
+      position: absolute;
+      top: 0;
+      width: 0%;
+
+      transition: all ease-in-out 250ms;
+    }
+  }
+}
+
+
+.curly{
+  font-family: 'Dancing Script', cursive;
+  color: navy;
+  text-align: center;
+}
+
+.wiry{
+  font-family: 'Dancing Script', cursive;
+  color: coral;
+}
+
+h3{
+  padding:8px;
+}
+
+#hidingPic{
+  width: 70%;
+  height: auto;
+}
+
+#end{
+  background-color: #55d6aa;
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  li{
+    list-style:none;
+  }
+}
+
+
+@media(max-width:1030px){
+  #floatleft{
+    display:none;
+  }
+}
+
+@media(max-width:860px){
+  nav{
+    ul{
+      display:none;
+    }
+    h4{
+      font-size:36px;
+      text-align: center;
+      padding-left:50px;
+      float: left;
+      &::after{
+        content: "Welcome to my website!";
+      }
+    }
+  }
+}
+
+@media(min-width:700px){
+  .wiry::after{
+    content: "Welcome to my website!"
+  }
+}
+
+#small_screen_nav_alt{
+  float:left;
+}
+
+
+#nothinghere{
+  background-color: yellow;
+  color: red;
+  text-align: center;
+  &:hover:{
+    color:blue;
+  }
+}
+
+.normal{
+  color: #ABB2BF;
+}
+
+.htmltag{
+  color: #E06C75;
+}
+
+.attributes{
+  color: #D19A66;
+}
+
+.quotes{
+  color: #98C378;
+}
+
+.tab{
+  padding-left: 5%;
+}
+
+.monospace{
+  font-family: monospace;
+}
+
+.comfort{
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.attags{
+  color: #C477DB;
+}
+
+.ids{
+  color: #61AFEF;
+}
+
+.colourcode{
+  color: #56B6C2;
+}
+
+.csstag{
+  color: #828996;
+}
